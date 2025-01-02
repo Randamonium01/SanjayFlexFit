@@ -1,0 +1,249 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('gymbg.jpg'); /* Background image for the entire body */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: #2f2f2f; /* Dark grey background */
+    color: #fff;
+}
+
+/* Banner Section (Header) */
+.banner {
+    background-image: url('.png'); /* Banner image */
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #333; /* Dark grey background */
+    padding: 15px 0;
+}
+
+.navbar .nav-container {
+    display: flex;
+    justify-content: space-between; /* Space out the logo and nav links */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.navbar .logo {
+    width: 30px; /* Adjust the logo width to a micro size */
+    height: auto; /* Maintain the aspect ratio */
+    margin-left: 0; /* Align logo to the left */
+    flex-shrink: 0; /* Prevent shrinking of the logo */
+}
+
+
+.navbar .nav-links {
+    display:inline-flex; /* Align links side by side */
+    gap: 20px; /* Space between links */
+}
+
+/* Navigation Links */
+.nav-link {
+    color: yellow; /* Yellow text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Set font size */
+    padding: 10px 15px; /* Add padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effects */
+}
+
+.nav-link:hover {
+    color: #fff; /* White text on hover */
+}
+
+
+/* About Section */
+#about-us {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about-section h1 {
+    text-align: center;
+    color: #f1c40f; /* Change heading text color to white */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section h2 {
+    text-align: center;
+    color: #f1c40f; /* Yellow color for subheading */
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.about-section p {
+    line-height: 1.6;
+    color: #fff; /* Change paragraph text color to white */
+    text-align: center;
+}
+
+.about-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.about-section ul li {
+    margin-bottom: 10px;
+}
+
+.about-section ul li strong {
+    color: #f1c40f; /* Yellow color for the strong text */
+}
+
+/* About FlexFit Section (New Card) */
+#about-flexfit {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background for card */
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 1200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-flexfit h2 {
+    text-align: center;
+    color: #f1c40f; /* Yellow color for subheading */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-flexfit p {
+    line-height: 1.6;
+    color: #fff; /* Change paragraph text color to white */
+    text-align: center;
+}
+
+/* About Owner Section */
+.about-owner {
+    background-image: url('your-about-owner-bg-image.jpg'); /* Optional background image for the owner section */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.owner-box {
+   
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Dark grey background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex-direction: row; /* Ensure the box elements are in a row */
+}
+
+.owner-photo {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.owner-photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.owner-info {
+    flex: 2;
+}
+
+.owner-info h2 {
+    color: #fff; /* Change heading text color to white */
+}
+
+.owner-info h3 {
+    color: #f1c40f; /* Yellow color for headings */
+}
+
+.owner-section h3 {
+    margin-top: 30px;
+}
+
+.owner-section ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.owner-section ul li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #fff; /* Change list item text color to white */
+}
+
+/* Footer */
+.footer {
+    background-color: #2f2f2f; /* Dark grey background */
+    color: #fff; /* Change text color to white */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #f1c40f; /* Yellow for links */
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar .nav-container {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about-owner .owner-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .owner-photo {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .owner-info {
+        text-align: center;
+    }
+}
